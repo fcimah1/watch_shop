@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch shop | eCommers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/circle-check-solid.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/font-awesome_4.7.0_css_font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/unpkg.com_aos@2.3.1_dist_aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body onload="removeLoader()">
+    <div id="preloader-active" style="">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-circle"></div>
+            <div class="preloader-inner position-relative ">
+
+                <div class="preloader-img pere-text">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start header  -->
+    <header class="header bg-white">
+        <nav class="navbar navbar-expand-lg py-lg-4 px-3 bg-white">
+            <div class="container-fluid ">
+                <a class="navbar-brand " href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-4 m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="hot nav-item dropdown">
+                            <a class="nav-link toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Leatest
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shop.html">Product List</a></li>
+                                <li><a class="dropdown-item" href="product-lists.html">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                                <li><a class="dropdown-item" href="elements.html">Element</a></li>
+                                <li><a class="dropdown-item" href="confirmation.html">Confirmation</a></li>
+                                <li><a class="dropdown-item" href="checkout.html">Product Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons d-flex gap-3 me-5 ">
+                    <a href="#" class="ms-lg-3" id="search-icon"><i class='fa fa-search '></i></a>
+                    <a href="#" class="ms-lg-3"><i class='fa fa-user'></i></a>
+                    <a href="#" class="ms-lg-3"><i class='fa fa-shopping-cart'></i></a>
+                </div>
+            </div>
+            <div class="container navbar-dark bg-dark fixed-top  justify-content-end d-lg-none p-3 mt-5">
+                <button class=" navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">Menu
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse w-100  mt-2  text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end w-100 flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Leatest
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="shop.html">Product List</a></li>
+                                    <li><a class="dropdown-item" href="product-lists.html">Product Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  active" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="elements.html">Element</a></li>
+                                    <li><a class="dropdown-item" href="confirmation.html">Confirmation</a></li>
+                                    <li><a class="dropdown-item" href="checkout.html">Product Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header  -->
+
+    <!-- start home  -->
+    <section class="home shop">
+        <div class="container ">
+            <div class="row mt-sm-4  d-flex justify-content-center align-items-center">
+                <div class="left-side col-11 mt-sm-5">
+                    <div id="start-nav"></div>
+                    <h3 class="shop-head text-center">Blog </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home  -->
+
+    <!-- start blog  -->
+    <section class="blog padding-top ">
+        <div class="container ">
+            <div class="row">
+                <div class="left-box col-lg-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="box">
+                                <div class="img">
+                                    <img class="" src="./assets/images/single_blog_1.png" alt="single_blog_1">
+                                    <!-- <div class="date"> -->
+                                    <a class="date" href="#">
+                                        <p><strong>15</strong><br>Jan</p>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h4>
+                                        <a href="#">
+                                            Google inks pact for new 35-storey office
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        That dominion stars lights dominion divide years for fourth have don't stars
+                                        is that he earth it first without heaven in place seed it second morning
+                                        saying.
+                                    </p>
+                                    <div class="comment d-flex gap-2">
+                                        <span>
+                                            <a href="#">
+                                                <i class="fa fa-user"></i>
+                                                Travel, Lifestyle
+                                            </a>
+                                        </span>
+                                        <span>|</span>
+                                        <span>
+                                            <a href="#">
+                                                <i class="fa fa-comments"></i>
+                                                03 Comments
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="box">
+                                <div class="img">
+                                    <img class="img-fluid" src="./assets/images/single_blog_2.png" alt="single_blog_2">
+                                    <div class="date">
+                                        <a href="#">
+                                            <p><strong>15</strong><br>Jan</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4>
+                                        <a href="#">
+                                            Google inks pact for new 35-storey office
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        That dominion stars lights dominion divide years for fourth have don't stars
+                                        is that he earth it first without heaven in place seed it second morning
+                                        saying.
+                                    </p>
+                                    <div class="comment d-flex gap-2">
+                                        <span>
+                                            <a href="#">
+                                                <i class="fa fa-user"></i>
+                                                Travel, Lifestyle
+                                            </a>
+                                        </span>
+                                        <span>|</span>
+                                        <span>
+                                            <a href="#">
+                                                <i class="fa fa-comments"></i>
+                                                03 Comments
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="box">
+                                <div class="img">
+                                    <img class="img-fluid" src="./assets/images/single_blog_3.png" alt="single_blog_3">
+                                    <div class="date">
+                                        <a href="#">
+                                            <p><strong>15</strong><br>Jan</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4>
+                                        <a href="#">
+                                            Google inks pact for new 35-storey office
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        That dominion stars lights dominion divide years for fourth have don't stars
+                                        is that he earth it first without heaven in place seed it second morning
+                                        saying.
+                                    </p>
+                                    <div class="comment d-flex gap-2">
+                                        <span>
+                                            <a href="#">
+                                                <i class="fa fa-user"></i>
+                                                Travel, Lifestyle
+                                            </a>
+                                        </span>
+                                        <span>|</span>
+                                        <span>
+                                            <a href="#">
+                                                <i class="fa fa-comments"></i>
+                                                03 Comments
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="box">
+                                <div class="img">
+                                    <img class="img-fluid" src="./assets/images/single_blog_4.png" alt="single_blog_4">
+                                    <div class="date">
+                                        <a href="#">
+                                            <p><strong>15</strong><br>Jan</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4><a href="#">
+                                            Google inks pact for new 35-storey office
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        That dominion stars lights dominion divide years for fourth have don't stars
+                                        is that he earth it first without heaven in place seed it second morning
+                                        saying.
+                                    </p>
+                                    <div class="comment d-flex gap-2">
+                                        <span>
+                                            <a class="com-details" href="#">
+                                                <i class="fa fa-user"></i>
+                                                Travel, Lifestyle
+                                            </a>
+                                        </span>
+                                        <span>|</span>
+                                        <span>
+                                            <a class="com-details" href="#">
+                                                <i class="fa fa-comments"></i>
+                                                03 Comments
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="box">
+                                <div class="img">
+                                    <img class="img-fluid" src="./assets/images/single_blog_5.png" alt="single_blog_5">
+                                    <div class="date">
+                                        <a href="#">
+                                            <p><strong>15</strong><br>Jan</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4>
+                                        <a href="#">
+                                            Google inks pact for new 35-storey office
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        That dominion stars lights dominion divide years for fourth have don't stars
+                                        is that he earth it first without heaven in place seed it second morning
+                                        saying.
+                                    </p>
+                                    <div class="comment d-flex gap-2">
+                                        <span>
+                                            <a href="#">
+                                                <i class="fa fa-user"></i>
+                                                Travel, Lifestyle
+                                            </a>
+                                        </span>
+                                        <span>|</span>
+                                        <span>
+                                            <a href="#">
+                                                <i class="fa fa-comments"></i>
+                                                03 Comments
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example ">
+                            <ul class="pagination gap-2 justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&lt;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&gt;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="right-box col-lg-4">
+                    <div class="single-sidebar-div">
+                        <div class="mb-3 search-form">
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <button type="button" class="">
+                                <i class='fa fa-search text-white'></i>
+                            </button>
+                        </div>
+                        <button class="text-uppercase search-button">search</button>
+                    </div>
+                    <div class="single-sidebar-div">
+                        <h4>Category</h4>
+                        <ul>
+                            <li><a href="#">Resaurant food(37)</a></li>
+                            <li><a href="#">Travel news(10)</a></li>
+                            <li><a href="#">Modern technology(03)</a></li>
+                            <li><a href="#">Product(11)</a></li>
+                            <li><a href="#">Inspiration21</a></li>
+                            <li><a href="#">Health Care (21)09</a></li>
+                        </ul>
+                    </div>
+                    <div class="single-sidebar-div">
+                        <h4>Recent Post </h4>
+                        <div class="item mb-3 d-flex gap-4 align-items-center justify-content-center">
+                            <div class="img">
+                                <img src="./assets/images/post_1.png" alt="post_1">
+                            </div>
+                            <div class="person">
+                                <h6><a href="#">From life was you fish...</a></h6>
+                                <p>January 12, 2019 </p>
+                            </div>
+                        </div>
+                        <div class="item mb-3 d-flex gap-4 align-items-center justify-content-center">
+                            <div class="img">
+                                <img src="./assets/images/post_2.png" alt="post_2">
+                            </div>
+                            <div class="person">
+                                <h6><a href="#">From life was you fish...</a></h6>
+                                <p>January 12, 2019 </p>
+                            </div>
+                        </div>
+                        <div class="item mb-3 d-flex gap-4 align-items-center justify-content-center">
+                            <div class="img">
+                                <img src="./assets/images/post_3.png" alt="post_3">
+                            </div>
+                            <div class="person">
+                                <h6><a href="#">From life was you fish...</a></h6>
+                                <p>January 12, 2019 </p>
+                            </div>
+                        </div>
+                        <div class="item mb-3 d-flex gap-4 align-items-center justify-content-center">
+                            <div class="img">
+                                <img src="./assets/images/post_4.png" alt="post_4">
+                            </div>
+                            <div class="person">
+                                <h6><a href="#">From life was you fish...</a></h6>
+                                <p>January 12, 2019 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-sidebar-div">
+                        <h4>Tag Clouds</h4>
+                        <p>
+                            <a href="#">project</a>
+                            <a href="#"> love</a>
+                            <a href="#">technology</a>
+                            <a href="#">travel</a>
+                            <a href="#">restaurant</a>
+                            <a href="#">life style</a>
+                            <a href="#">design</a>
+                            <a href="#">illustration</a>
+                        </p>
+                    </div>
+                    <div class="single-sidebar-div">
+                        <h4>Tag Clouds</h4>
+                        <ul class="list-images d-flex">
+                            <li>
+                                <a href="#"><img class="img-fluid" src="./assets/images/post_5.png" alt="post_5"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="img-fluid" src="./assets/images/post_6.png" alt="post_6"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="img-fluid" src="./assets/images/post_7.png" alt="post_7"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="img-fluid" src="./assets/images/post_8.png" alt="post_8"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="img-fluid" src="./assets/images/post_9.png" alt="post_9"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="img-fluid" src="./assets/images/post_10.png" alt="post_10"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="single-sidebar-div">
+                        <h4>Newsletter </h4>
+                        <div class="mb-3 mt-5 search-form">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">
+                        </div>
+                        <button class="text-uppercase search-button">subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end blog  -->
+
+
+    <!-- start footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="mb col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                    <div class="box">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img class="" src="./assets/images/logo2_footer.png" alt="logo">
+                            </a>
+                        </div>
+                        <p>
+                            Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.
+                        </p>
+                    </div>
+                </div>
+                <div class="mb col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                    <div class="box ps-1">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#"> Offers &amp; Discounts</a></li>
+                            <li><a href="#"> Get Coupon</a></li>
+                            <li><a href="#"> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                    <div class="box">
+                        <h4>New Products</h4>
+                        <ul>
+                            <li><a href="#">Woman Cloth</a></li>
+                            <li><a href="#">Fashion Accessories</a></li>
+                            <li><a href="#"> Man Accessories</a></li>
+                            <li><a href="#"> Rubber made Toys</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                    <div class="box">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Frequently Asked Questions</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Report a Payment Issue</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-7">
+                    <div class="copy-right">
+                        <p>
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear());</script>2023 All rights reserved |
+                            This
+                            template is made with <i class="text-danger fa fa-heart" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank" class="text-danger fw-thin">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-5">
+                    <div class="copy-right d-flex ">
+
+                        <div class="footer-social me-md-auto ms-lg-auto d-flex gap-md-2 gap-lg-4">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                            <a href="#"><i class="fa fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+    <a id="move-up" class="" href="#top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <section id="search" style="display: none;" class="">
+        <div class=" d-flex align-items-center justify-content-center">
+            <div id="search-close" class="search-close-btn">+</div>
+            <form class="">
+                <input type="text" id="search" placeholder="Searching key....." fdprocessedid="vzx84m">
+            </form>
+        </div>
+    </section>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/unpkg.com_aos@2.3.1_dist_aos.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
